@@ -9,6 +9,7 @@
 		<AssemblyVersion>1.0.*</AssemblyVersion>
 		<RootNamespace>KE.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
 		<UseWindowsForms>True</UseWindowsForms>
+		<ApplicationIcon>lock-screen.ico</ApplicationIcon>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -22,6 +23,10 @@
 		<GenerateAssemblyFileVersionAttribute>False</GenerateAssemblyFileVersionAttribute>
 		<GenerateAssemblyInformationalVersionAttribute>False</GenerateAssemblyInformationalVersionAttribute>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="lock-screen.ico" />
+	</ItemGroup>
 
 	<ItemGroup>
 	  <Compile Update="Properties\Resources.Designer.cs">

@@ -60,7 +60,7 @@ public partial class App : System.Windows.Application
                 Utils.AddToStartup(appName, appPath);
             }
 
-            autoStartItem.Checked = !autoStartItem.Checked;
+            autoStartItem.Checked = Utils.IsInStartup(appName, appPath);
         }
         else if (e.ClickedItem == enabledItem)
         {

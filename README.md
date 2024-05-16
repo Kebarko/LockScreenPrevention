@@ -1,4 +1,4 @@
-# Lock screen prevention
+# Lock Screen Prevention
 
 ## Overview
 

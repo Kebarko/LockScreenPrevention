@@ -21,6 +21,7 @@ public partial class App : System.Windows.Application
     {
         var icon = new NotifyIcon();
         icon.Icon = LockScreenPrevention.Properties.Resources.LockScreenIcon;
+        icon.Text = "Lock Screen Prevention";
 
         icon.ContextMenuStrip = new ContextMenuStrip();
         icon.ContextMenuStrip.Items.Add(autoStartItem = new ToolStripMenuItem("Auto-Start"));

@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.Diagnostics;
+using System.IO;
 using System.Windows;
 
 namespace KE.LockScreenPrevention;
@@ -8,9 +9,9 @@ namespace KE.LockScreenPrevention;
 /// </summary>
 public partial class App : System.Windows.Application
 {
-    private static readonly Assembly assembly = Assembly.GetExecutingAssembly();
-    private static readonly string appName = assembly.GetName().Name!;
-    private static readonly string appPath = assembly.Location;
+    private static readonly ProcessModule processModule = Process.GetCurrentProcess().MainModule!;
+    private static readonly string appName = Path.GetFileNameWithoutExtension(processModule.ModuleName);
+    private static readonly string appPath = processModule.FileName;
 
     private readonly ToolStripMenuItem autoStartItem;
     private readonly ToolStripMenuItem enabledItem;

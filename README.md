@@ -2,7 +2,7 @@
 
 ## Overview
 
-Prevents the system to turning off the display or locking while the application is running. This is useful when you cannot change system settings, such as due to company policies.
+Prevents the system from turning off the display or locking while the application is running. This is useful when you cannot change system settings, such as due to company policies.
 
 ## Requirements
 
